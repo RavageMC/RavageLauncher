@@ -48,7 +48,7 @@ if(!isDev){
                 loggerAutoUpdater.info('New update available', info.version)
                 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/dscalzi/HeliosLauncher/releases/download/v${info.version}/Helios-Launcher-setup-${info.version}${process.arch === 'arm64' ? '-arm64' : '-x64'}.dmg`
+                    info.darwindownload = `https://github.com/RavageMC/RavageLauncher/releases/download/v${info.version}/Ravage-Launcher-setup-${info.version}${process.arch === 'arm64' ? '-arm64' : '-x64'}.dmg`
                     showUpdateUI(info)
                 }
                 
@@ -211,3 +211,16 @@ document.addEventListener('keydown', function (e) {
         window.toggleDevTools()
     }
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    let imgSeal = document.querySelector('#image_seal');
+    let originalBackgroundImage = imgSeal.style.backgroundImage;
+
+    imgSeal.addEventListener('mouseover', function() {
+        imgSeal.style.backgroundImage = "url('assets/images/logo_hovered.png')";  // update with your path to the hover image
+    });
+
+    imgSeal.addEventListener('mouseout', function() {
+        imgSeal.style.backgroundImage = originalBackgroundImage;  // revert back to the original image
+    });
+});

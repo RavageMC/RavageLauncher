@@ -8,19 +8,20 @@
  ******************************************************************************/
 
 @font-face {
-    font-family: 'Avenir Book';
-    src: url('../fonts/Avenir-Book.ttf');
+    font-family: 'Bender Regular';
+    src: url('../fonts/Bender.otf');
 }
 
 @font-face {
-    font-family: 'Avenir Medium';
-    src: url('../fonts/Avenir-Medium.ttf');
+    font-family: 'Bender Bold';
+    src: url('../fonts/Bender-Bold.otf');
 }
 
 @font-face {
-    font-family: 'Ringbearer';
-    src: url('../fonts/Ringbearer.ttf');
+    font-family: 'Bender Black';
+    src: url('../fonts/Bender-Black.otf');
 }
+
 
 /*******************************************************************************
  *                                                                             *
@@ -42,7 +43,7 @@ p {
 
 /* Set default font and color. */
 body, button {
-    font-family: 'Avenir Book';
+    font-family: 'Bender Bold';
     color: white;
 }
 
@@ -110,7 +111,7 @@ body, button {
 }
 #frameTitleText {
     font-size: 14px;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     letter-spacing: 0.5px;
 }
 
@@ -274,17 +275,22 @@ body, button {
 
 #welcomeImageSeal {
     border-radius: 50%;
-    border: 2px solid #cad7e1;
+    border: 2px solid #343434;
     background: rgba(1, 2, 1, 0.5);
     height: 125px;
     width: 125px;
     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
     margin-bottom: 5%;
     margin-top: 10%;
+    image-rendering: -webkit-optimize-contrast; /* Safari/Chrome */
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: pixelated; /* Future browsers */
+    -ms-interpolation-mode: nearest-neighbor; /* IE */
 }
 
 #welcomeHeader {
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     text-align: center;
     color: white;
     margin-bottom: 25px;
@@ -493,11 +499,16 @@ body, button {
     width: 125px;
     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
     margin-bottom: 20px;
+    image-rendering: -webkit-optimize-contrast; /* Safari/Chrome */
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: pixelated; /* Future browsers */
+    -ms-interpolation-mode: nearest-neighbor; /* IE */
 }
 
 /* Header on login view. */
 #loginSubheader {
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     margin-bottom: 25px;
     font-size: 12px;
     letter-spacing: 1px;
@@ -522,7 +533,7 @@ body, button {
 
 /* Span which displays errors related to login field content. */
 .loginErrorSpan {
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     font-weight: bold;
     font-size: 8px;
     color: #ff1b0c;
@@ -558,7 +569,7 @@ body, button {
 
 /* Login text input styles. */
 .loginField {
-    font-family: 'Avenir Book';
+    font-family: 'Bender Bold';
     background: none;
     border-width: 1.5px 0px 0px 0px;
     border-style: solid;
@@ -1222,7 +1233,7 @@ body, button {
 }
 .settingsTabHeaderText {
     font-size: 20px;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
 }
 .settingsTabHeaderDesc {
     font-size: 12px;
@@ -1261,7 +1272,7 @@ body, button {
     background: none;
     font-size: 12px;
     border-radius: 3px;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     transition: 0.25s ease;
     cursor: pointer;
     outline: none;
@@ -1293,7 +1304,7 @@ body, button {
     background: rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     border: 1px solid rgba(126, 126, 126, 0.57);
-    font-family: 'Avenir Book';
+    font-family: 'Bender Bold';
     transition: 0.25s ease;
 }
 #settingsContainer input[type=number]:focus,
@@ -1322,7 +1333,7 @@ body, button {
 }
 .settingsFieldTitle {
     font-size: 14px;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     color: rgba(255, 255, 255, 0.95);
 }
 .settingsFieldDesc {
@@ -1485,7 +1496,7 @@ input:checked + .toggleSwitchSlider:before {
     width: 89%;
 }
 .settingsFileSelDesc strong {
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
 }
 
 /* * *
@@ -1593,7 +1604,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 12px;
     color: grey;
     font-weight: bold;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
 }
 .settingsAuthAccountDetailValue {
     font-size: 14px;
@@ -1615,7 +1626,7 @@ input:checked + .toggleSwitchSlider:before {
     border: none;
     white-space: nowrap;
     background: none;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     outline: none;
     transition: 0.25s ease;
 }
@@ -1640,7 +1651,7 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     font-size: 12px;
     border-radius: 3px;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     transition: 0.25s ease;
     cursor: pointer;
     outline: none;
@@ -2195,7 +2206,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Release type text. */
 #settingsAboutCurrentVersionTitle {
     font-size: 12px;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     color: #23aa23;
     font-weight: bold;
 }
@@ -2284,7 +2295,7 @@ input:checked + .toggleSwitchSlider:before {
     background-color: rgba(255, 255, 255, 0.25);
     color: white;
     border-radius: 3px;
-    font-family: 'Avenir Book';
+    font-family: 'Bender Bold';
 }
 .settingsChangelogText li+li {
     margin-top: .25em;
@@ -2394,7 +2405,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Release type text. */
 #settingsUpdateVersionTitle {
     font-size: 12px;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     color: #23aa23;
     font-weight: bold;
 }
@@ -2593,7 +2604,7 @@ input:checked + .toggleSwitchSlider:before {
 #newsArticleTitle {
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     color: white;
     text-decoration: none;
     transition: 0.25s ease;
@@ -2855,12 +2866,17 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Logo image. */
 #image_seal {
-    height: 70px;
-    width: auto;
+    width: 209px;
+    height: 64px;
     position: relative;
-    border: 2px solid white;
     box-sizing: border-box;
-    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out; /* Add transition effect */
+}
+
+#image_seal:hover {
+    background-image: url('assets/images/logo_hovered.png');
 }
 
 /* Logo container styles. */
@@ -2910,7 +2926,7 @@ input:checked + .toggleSwitchSlider:before {
     z-index: 1;
     top: 115%;
     left: -17.5px;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     font-size: 12px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
 }
@@ -2970,8 +2986,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* User profile avatar container. */
 #avatarContainer {
-    border-radius: 50%;
-    border: 2px solid #cad7e1;
+    border-radius: 10%;
     box-sizing: border-box;
     background: rgba(1, 2, 1, 0.5);
     height: 70px;
@@ -3001,7 +3016,7 @@ input:checked + .toggleSwitchSlider:before {
     cursor: pointer;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 #avatarOverlay:hover,
 #avatarOverlay:focus {
@@ -3013,14 +3028,15 @@ input:checked + .toggleSwitchSlider:before {
 
 /* User profile name text. */
 #user_text {
-    font-size: 12px;
-    min-width: 135px;
+    font-size: 14px;
+    margin-top: 125px;
+    /* min-width: 135px; */
     font-weight: 900;
     letter-spacing: 1px;
     text-shadow: 0px 0px 20px black;
     position: absolute;
-    right: 95px;
-    text-align: right;
+    /* right: 95px; */
+    /* text-align: right; */
     -webkit-user-select: initial;
 }
 
@@ -3029,7 +3045,7 @@ input:checked + .toggleSwitchSlider:before {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 53px;
     height: calc(100% - 95px);
     width: 70px;
     align-items: center;
@@ -3242,7 +3258,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 4px;
     padding: 5px 10px;
     z-index: 1;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     font-size: 12px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
     bottom: calc(100% + 15px);
@@ -3401,7 +3417,8 @@ input:checked + .toggleSwitchSlider:before {
     font-weight: 900;
     letter-spacing: 2px;
     text-shadow: 0px 0px 0px #bebcbb;
-    font-size: 20px;
+    font-size: 30px;
+    color: white;
     padding: 0px;
     transition: 0.25s ease;
     outline: none;
@@ -3557,7 +3574,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Overlay title styles. */
 #overlayTitle {
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -3583,7 +3600,7 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     border: 1px solid #ffffff;
     color: white;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     font-weight: bold;
     border-radius: 2px;
     padding: 0px 8.1px;
@@ -3635,7 +3652,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Server selection header. */
 #serverSelectHeader,
 #accountSelectHeader {
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     font-size: 20px;
     font-weight: bold;
     color: #fff;
@@ -3858,7 +3875,7 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     border: 1px solid #ffffff;
     color: white;
-    font-family: 'Avenir Medium';
+    font-family: 'Bender Regular';
     font-weight: bold;
     border-radius: 2px;
     padding: 0px 8.1px;
@@ -3909,7 +3926,6 @@ input:checked + .toggleSwitchSlider:before {
  * Loading Element (app.ejs)                                                   *
  *                                                                             *
  ******************************************************************************/
-
 /* Loading container, placed above everything. */
 #loadingContainer {
     position: absolute;
@@ -3938,31 +3954,21 @@ input:checked + .toggleSwitchSlider:before {
     justify-content: center;
 }
 
-/* Stationary image for the spinner. */
-#loadCenterImage {
-    position: absolute;
-    width: 277px;
-    height: auto;
-}
-
-/* Rotating image for the spinner. */
-#loadSpinnerImage {
-    width: 280px;
-    height: auto;
-    z-index: 400;
-}
-
-/* Rotating animation for the spinner. */
-@keyframes rotating {
-    from {
-        transform: rotate(0deg);
+/* Class for rotating the center image. */
+@keyframes rotatingCenter {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: ease-in-out;
     }
-    to {
+    100% {
         transform: rotate(360deg);
     }
 }
 
-/* Class which is applied when the spinner image is spinning. */
-.rotating {
-    animation: rotating 10s linear infinite;
+/* Apply the rotatingCenter class directly to the #loadCenterImage element. */
+#loadCenterImage.rotatingCenter {
+    animation: rotatingCenter 5s linear infinite;
+    width: 128px;
+ 
+    height: auto;
 }

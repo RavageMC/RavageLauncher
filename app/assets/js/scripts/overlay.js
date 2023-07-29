@@ -279,8 +279,7 @@ async function populateServerListings(){
                 <span class="serverListingName">${serv.rawServer.name}</span>
                 <span class="serverListingDescription">${serv.rawServer.description}</span>
                 <div class="serverListingInfo">
-                    <div class="serverListingVersion">${serv.rawServer.minecraftVersion}</div>
-                    <div class="serverListingRevision">${serv.rawServer.version}</div>
+                    <div class="serverListingVersion">${serv.rawServer.version}</div>
                     ${serv.rawServer.mainServer ? `<div class="serverListingStarWrapper">
                         <svg id="Layer_1" viewBox="0 0 107.45 104.74" width="20px" height="20px">
                             <defs>
