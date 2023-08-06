@@ -151,7 +151,7 @@ function updateSelectedAccount(authUser){
             username = authUser.displayName
         }
         if(authUser.uuid != null){
-            document.getElementById('avatarContainer').style.backgroundImage = `url('https://mc-heads.net/avatar/${authUser.uuid}')`
+            document.getElementById('avatarContainer').style.backgroundImage = `url('https://mc-ravage.net/api/skin-api/avatars/face/${authUser.uuid}')`
         }
     }
     user_text.innerHTML = username

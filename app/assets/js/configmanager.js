@@ -321,9 +321,29 @@ exports.getAuthAccount = function(uuid){
  * 
  * @returns {Object} The authenticated account object created by this action.
  */
-exports.updateMojangAuthAccount = function(uuid, accessToken){
+exports.updateAzAuthAccount = function(uuid, accessToken){
     config.authenticationDatabase[uuid].accessToken = accessToken
-    config.authenticationDatabase[uuid].type = 'mojang' // For gradual conversion.
+    config.authenticationDatabase[uuid].type = 'azAuth' // For gradual conversion.
+    return config.authenticationDatabase[uuid]
+}
+
+/**
+ * Adds an authenticated azuriom account to the database to be stored.
+ * 
+ * @param {Object} result The result of the connection.
+ * 
+ * @returns {Object} The authenticated account object created by this action.
+ */
+exports.addAzAuthAccount = function(uuid, accessToken, name, role) {
+    config.selectedAccount = uuid
+    config.authenticationDatabase[uuid] = {
+        type: 'azAuth',
+        accessToken: accessToken,
+        name: name.trim(),
+        displayName: name.trim(),
+        uuid: uuid.toString(),
+        role: role
+    }
     return config.authenticationDatabase[uuid]
 }
 

@@ -14,3 +14,10 @@ const api = new DistributionAPI(
 )
 
 exports.DistroAPI = api
+
+/**
+ * @returns {DistroIndex}
+ */
+exports.getDistribution = function(){
+    return data
+}
